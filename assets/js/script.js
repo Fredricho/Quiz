@@ -176,7 +176,7 @@ function runGame() {
     console.log("quizQuestion")
     showquestion();
 }
-runGame;
+
 
 function showquestion(){
     qcounter++;
