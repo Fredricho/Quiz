@@ -29,7 +29,9 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-
+.heading {
+    margin-bottom: 5rem;
+}
 .game-area {
     
     height: 60rem;
@@ -38,15 +40,22 @@ h2 {
     border-radius: 1.5rem;
     /* justify-content: center; */
     /* align-items: center;  */
+    padding-top: 3rem;
     text-align: center;
     background-color: brown;
+   
 
 }
 
 .question-area {
-    
+   
+    padding: 1.5rem;
     align-items: center;
     justify-content: center;
+    border:0.5rem solid black;
+    background-color: greenyellow;
+    max-width: 80%;
+    margin: auto;
 }
 
 .answer-area {
@@ -69,6 +78,7 @@ h2 {
     background-color: beige;
     border: 0.3rem solid black;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 .btn:hover{
