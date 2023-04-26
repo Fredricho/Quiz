@@ -162,3 +162,17 @@ let questions = [{
 ];
 const question = document.getElementById("question");
 const alternatives = Array.from(document.getElementsByClassName('alternatives'));
+
+let currentQuestion = {};
+let score = 0;
+let qCounter = 0;
+let quizQuestions = [];
+
+
+function runGame() {
+    qCounter = 0;
+    score = 0;
+    quizQuestions = [...questions];
+}
+
+
