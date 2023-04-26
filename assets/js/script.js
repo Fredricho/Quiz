@@ -173,6 +173,14 @@ function runGame() {
     qCounter = 0;
     score = 0;
     quizQuestions = [...questions];
+    console.log("quizQuestion")
+    showquestion();
 }
+runGame;
 
-
+function showquestion(){
+    qcounter++;
+    const qIndex = Math.floor(Math.random() * quizQuestions.length);
+    currentQuestion = quizQuestions[qIndex];
+    question.innerText = currentQuestion.question;
+}
