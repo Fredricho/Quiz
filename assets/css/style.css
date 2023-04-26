@@ -3,6 +3,7 @@
 :root {
     font-size: 62.5%;
     background-color: aqua;
+    font-family: Bitter, sans-serif;
 }
 
 * {
@@ -11,10 +12,65 @@
     box-sizing: border-box;
 }
 
-.game-area{
+h1 {
+    font-family: Merriweather, sans-serif;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: Bitter, sans-serif;
+    font-size: 1.5rem;
+}
+
+.game-area-outer {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+}
+
+.game-area {
+    
+    height: 60rem;
+    width: 70rem;
+    max-width: 80rem;
+    border-radius: 1.5rem;
+    /* justify-content: center; */
+    /* align-items: center;  */
+    text-align: center;
+    background-color: brown;
+
+}
+
+.question-area {
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.answer-area {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    margin-top: 5rem;
+
+}
+
+.score-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: beige;
+    border: 0.3rem solid black;
+    border-radius: 0.5rem;
+}
+
+.btn:hover{
+background-color:aquamarine;
 }
