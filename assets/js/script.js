@@ -160,3 +160,5 @@ let questions = [{
         answer: "a"
     },
 ];
+const question = document.getElementById("question");
+const alternatives = Array.from(document.getElementsByClassName('alternatives'));
