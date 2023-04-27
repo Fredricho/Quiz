@@ -160,27 +160,34 @@ let questions = [{
         answer: "a"
     },
 ];
-const question = document.getElementById("question");
-const alternatives = Array.from(document.getElementsByClassName('alternatives'));
+const questionText = document.getElementById("question");
+const alternativesText = Array.from(document.getElementsByClassName('alternatives'));
+const scoreText = document.getElementById("correct");
+const wrongText = document.getElementById("inCorrect");
+const submitText = document.getElementById("btn--submit");
+const qOutOFText = document.getElementById("numberofQ");
+const MAX_QUESTIONS = 5;
+const SCORE_POINTS = 10;
 
 let currentQuestion = {};
-let score = 0;
 let qCounter = 0;
 let quizQuestions = [];
+let acceptAnswer = true;
+let score = 0;
 
+document.addEventListener("DOMContentLoaded",)
 
 function runGame() {
     qCounter = 0;
     score = 0;
     quizQuestions = [...questions];
-    console.log("quizQuestion")
-    showquestion();
+    showQuestion();
 }
 
+function showQuestion() {
+    qCounter++;
+    qIndex = Math.floor(Math.random() * quizQuestions.length);
+    // const currentQuestion = quizQuestions[qIndex];
+    questionText.innerText = currentQuestion.question;
 
-function showquestion(){
-    qcounter++;
-    const qIndex = Math.floor(Math.random() * quizQuestions.length);
-    currentQuestion = quizQuestions[qIndex];
-    question.innerText = currentQuestion.question;
 }
