@@ -192,6 +192,49 @@ function showQuestion() {
         const number = alternative.dataset.type;
         alternative.innerText = currentQuestion["alternative" + number];
     });
+    quizQuestions.splice(qIndex, 1);
+    acceptAnswer = true;
+}
+alternativeText.forEach(function (alternative) {
+    alternative.addEventListener('click', function (event) {
+        if (!acceptAnswer) return;
+        acceptAnswer = false;
+        const playerAnswer = event.target;
+        const correctAnswer = playerAnswer.dataset.type;
+        let addAnswerTo = 'incorrect';
+        if (correctAnswer === currentQuestion.answer) {
+            addAnswerTo = 'correct';
+            playerAnswer.parentElement.classList.add(addAnswerTo);
+        } else {
+            let addAnswerTo = 'incorrect';
+            playerAnswer.parentElement.classList.add(addAnswerTo);
+        }
+        if (addAnswerTo === "correct") {
+            correctScore(+1);
+        }
+        if (addAnswerTo === "incorrect") {
+            incorrectScore1(+1);
+        }
+        setTimeout(function () {
+                playerAnswer.parentElement.classList.remove(addAnswerTo);
+                showQuestion();
+            },
+            1000);
 
+
+        //  if (qCounter == MAX_QUESTIONS) {
+        //    endGameMessage();
+        // }
+    });
+});
+
+function correctScore(num) {
+    score += num;
+    scoreText.innerText = score + '/' + MAX_QUESTIONS;
+}
+
+function incorrectScore1(num) {
+    score += num;
+    wrongText.innerText = score + '/' + MAX_QUESTIONS;
 }
 runGame();
