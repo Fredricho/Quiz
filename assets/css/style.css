@@ -42,7 +42,7 @@ h2 {
     /* align-items: center;  */
     padding-top: 3rem;
     text-align: center;
-    background-color: brown;
+    background-color: burlywood;
    
 
 }
@@ -76,7 +76,7 @@ h2 {
     margin: 1rem;
     padding: 1.5rem;
     background-color: beige;
-    border: 0.3rem solid black;
+    border: 0.5rem solid black;
     border-radius: 0.5rem;
     cursor: pointer;
 }
@@ -87,8 +87,10 @@ background-color:aquamarine;
 
 .correct{
     background-color: green;
+    border-color: green;
 }
 
 .incorrect{
     background-color: red;
+    border-color: red;
 }

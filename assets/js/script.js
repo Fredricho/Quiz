@@ -23,6 +23,7 @@ function runGame() {
 }
 
 function showQuestion() {
+  
     qCounter++;
     const qIndex = Math.floor(Math.random() * quizQuestions.length);
     currentQuestion = quizQuestions[qIndex];
@@ -34,6 +35,7 @@ function showQuestion() {
     quizQuestions.splice(qIndex, 1);
     acceptAnswer = true;
 }
+
 alternativeText.forEach(function (alternative) {
     alternative.addEventListener('click', function (event) {
         if (!acceptAnswer) return;
@@ -46,26 +48,16 @@ alternativeText.forEach(function (alternative) {
             playerAnswer.classList.add(addAnswerTo);
             correctScore(+1);
         } else {
-            let addAnswerTo = 'incorrect';
+            addAnswerTo = 'incorrect';
             playerAnswer.classList.add(addAnswerTo);
             incorrectScore1(+1);
         }
-        // if (addAnswerTo === "correct") {
-           
-        // }
-        // if (addAnswerTo === "incorrect") {
-            
-        // }
+
         setTimeout(function () {
                 playerAnswer.classList.remove(addAnswerTo);
                 showQuestion();
             },
             1500);
-
-
-        //  if (qCounter == maxQ) {
-        //    endGameMessage();
-        // }
     });
 });
 
@@ -78,4 +70,5 @@ function incorrectScore1(num) {
     score += num;
     wrongText.innerText = score + '/' + maxQ;
 }
+
 runGame();
