@@ -84,6 +84,9 @@ h2 {
 .btn:hover{
 background-color:aquamarine;
 }
+#startQ{
+    text-decoration: none;
+}
 
 .correct{
     /* background-color: green; */
