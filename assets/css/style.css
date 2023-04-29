@@ -4,6 +4,7 @@
     font-size: 62.5%;
     background-color: aqua;
     font-family: Bitter, sans-serif;
+    
 }
 
 * {
@@ -84,8 +85,14 @@ h2 {
 .btn:hover{
 background-color:aquamarine;
 }
-#startQ{
+.startQ{
     text-decoration: none;
+    font-size: 2rem;
+    padding: 2rem;
+    color: black;
+}
+.fa-solid{
+    font-size: 2rem;
 }
 
 .correct{
