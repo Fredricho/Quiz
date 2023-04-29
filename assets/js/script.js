@@ -25,6 +25,7 @@ function runGame() {
 function showQuestion() {
   
     qCounter++;
+
     const qIndex = Math.floor(Math.random() * quizQuestions.length);
     currentQuestion = quizQuestions[qIndex];
     questionText.innerText = currentQuestion.question;
@@ -51,7 +52,7 @@ alternativeText.forEach(function (alternative) {
             addAnswerTo = 'incorrect';
             playerAnswer.classList.add(addAnswerTo);
             incorrectScore1(+1);
-        }
+        } 
 
         setTimeout(function () {
                 playerAnswer.classList.remove(addAnswerTo);
