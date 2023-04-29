@@ -1,108 +1,191 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# General Knowledge Quiz
 
-Welcome Fredric Hörzell,
+General Knowledge Quiz is a Quiz game, with the aim to test the users general knowledge. The goal of the game is to give the user a funny time while testing their knowledge and it's easy to get started!
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Welcome to General Knowledge Quiz: [YogaOnline](https://fredricho.github.io/Quiz/)
 
-## Gitpod Reminders
+<img src="mockup" 
+  style="height:200px width:200px;">
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## Wireframes
 
-A blue button should appear to click: _Make Public_,
+These wireframes were created in Balsamiq for the YogaOnline website, one for each page for full-size and mobile size. There will be some adjustments to the final sited due to the development process and time limit.
+<div>
+<img
+  src=""
+  alt="Balsamiq-Home"
+  title="Home Desktop-version"
+  style="display: inline-block;max-width: 30vw; height:50vh;">
+  <img
+  src="readimages/Classes W1.png"
+  alt="Balsamiq-YogaOnline-Classes"
+  title="Classes Desktop-version"
+  style="display: inline-block;max-width: 30vw; height:50vh;">
+    <img
+  src="readimages/Sign In w.png"
+  alt="Balsamiq-YogaOnline-Sign Up"
+  title="Sign Up Desktop-version"
+  style="display: inline-block;max-width: 30vw; height:50vh;">
+   <img
+  src="readimages/Home M.png"
+  alt="Balsamiq-YogaOnline-Home-Mobile"
+  title="Home Mobile-version"
+  style="display: inline-block;max-width: 30vw; height:50vh;">
+   <img
+  src="readimages/Classes M.png"
+  alt="Balsamiq-YogaOnline-Classes-Mobile"
+  title="Classes Mobile-version"
+  style="display: inline-block;max-width: 30vw; height:50vh;">
+   <img
+  src="readimages/sign M.png"
+  alt="Balsamiq-YogaOnline-Sign Up-Mobile"
+  title="Sign Up Mobile-version"
+  style="display: inline-block;max-width:30vw; height:50vh;">
+</div>
 
-Another blue button should appear to click: _Open Browser_.
+## Site Structure
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The General Knowledge Quiz has two pages, [Home](/index.html), [Quiz](/quiz.html), The Quiz is entered thru a button "Start Quiz" which starts the quiz, and quiz page has a button "Stop Quiz" that takes the user back to home page.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## Design Choiches
+  * ### Typography
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+  The chosen fonts for this website were Merriweather for headings and Bitter for the body and the backup fonts were sans-serif respectively.
+  * Merriweather was choosen to be a easy to read font.
+  * Bitter was chosen to be easy to read. 
 
-To log into the Heroku toolbelt CLI:
+* ### Color Scheme
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The chosen color scheme for the site/quiz is to give the site a good looking style.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Features
+The Quiz is developed to be simple, and the focus is to let the user started with the quiz directly.
 
-------
+## Existing Features
 
-## Release History
+  * ### Home- First Page
+    * Is the first page the users enters, it has a short descritption and rules of the quiz game. The start button on the page navigates the user to the quiz and starts it. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+    <img src="" style="height:autopx width:200px;">
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+  * ### Quiz - Page
+    * Is the were the Quiz is locate, and it views the question and four alternatives to each question. If the users choice is correct the button border, text and font-size will change to red/green and the font-size will get bigger or smaller. The number of questions and the users score is to be viewed aswell. 
+     <br>
+<img src="" style="height:auto; width:500px;">
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+ 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Future Features
+* A highscore page.
+* Different Quiz themes
+*  
+* 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Technologies Used
+* HTML5 - Provides the structure for the site. 
+* CSS - Provides the styling for the site.
+* JavaScript - Provides the interactivity for the site.
+* Balsamiq - Used to sketch the page. 
+* Gitpod - Used to deploy the site. 
+* Github - Used to host the site and make edits. 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Testing 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Code Validation
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The site has gone through several tests to minimize the risk of unwanted errors. All pages have been validated in W3C html Validator,the W3C CSS Validator and JShint for JavaScript. There were a few minor errors, such as no !DOCTYPE,
+after the test all of the errors, were fixed. Images of the result in HTML validator, for each page:
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* ### Home Page
+<img src="">
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+* ### Quiz Page
+<img src="">
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Responsiveness Test
+* This test was made manually tested with Google Chrome Devtools, and all of the listed devices in devtools were checked. Both pages passed the test.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+  <img  src="" style="height:auto; width:10rem;"> 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Browser Compatibility
+* The General Knowledge Page site is tested on four different browsers: 
+Google Chrome - Pass, no visible errors or bugs, and fully responsive.
+Apple Safari - Pass, no visible errors or bugs, and fully responsive.
+Microsoft Edge - Pass, no visible errors or bugs, and fully responsive.
+Mozilla Firefox - Pass, no visible errors or bugs, and fully responsive.
 
-------
+ ## Known Bugs
+ * Resolved
+   * During the HTML validation a few bugs were shown:
+     * No !DOCTYPE HTML, 
 
-## FAQ about the uptime script
+* Unresolved
+ * 
+ * 
 
-**Why have you added this script?**
+## Additional Testing 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### Lighthouse
+  * The site is tested with Google Chrome Lighthouse, the results are shown in the image below:
+  <img src="" style="height:auto; width:40rem;">
+ 
+  * This is the result after I compressed the Images and video, which gave me a better result.  
 
-**How will this affect me?**
+   ## Deployment
+ The site was deployed on Github and how it was made and an image:
+ 1. GitHub > Repository > Settings Tab
+ 2. Go to Pages
+ 3. Source > select Branch to master > Save
+ 4. Wait some time, then a link will appear up if the progress were successful.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+ <img src="readimages/gith.png" style="height:auto; width:40rem;">
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+ [Link to repository](https://github.com/Fredricho/Quiz)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+  
+  ## To fork the repository on GitHub
 
-**So….?**
+A copy of the repository can be made and changes to the copy won't affect the original repository. Below are the steps to fork it:
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+1. Login in and go to [Link to repository](https://github.com/Fredricho/Quiz)
+2. The fork icon is top right, click that button to make a copy of the original repository.
 
-**Can I opt out?**
+<img src="readimages/fork.png" style="height:auto; width:40rem;">
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Create a local clone of this project
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Here comes a guide to creating a local clone of this project:
 
-**Anything more?**
+1. Go to repository
+2. Press code - button 
+3. Click the copy button. 
+4. In the wanted IDE, Open Git Bush. 
+5. Change the current working directory to the location you prefer to get it cloned to. 
+6. Type git clone and CTRL-V/Paste the URL from the previous step from Github 
+7. Hit enter and a clone will be created.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+<img src="readimages/code.png" style="height:auto; width:40rem;">
 
----
+## Credits
+* GitHub- For make it possible to host my site.
+* Gitpod - For giving me the nessecary tools to develop a site. 
+* ChatGpt - For generated Quiz questions and answers.
+* Balsamiq - For the wireframes.
+* W3schools - For all of the information, was really key for making this site.
+* YouTube toutorials
 
-Happy coding!
+## Content
+The Quiz is generated by ChatGpt. Icons in Home and Quiz page were taken from FontAwesome. 
+
+
+## Acknowledgements
+This site was made as my second project at Code Institute, it is my first game to develop as well and the first time using JavaScript. It has been very challenging an
+
+
+
+Fredricho 2023
