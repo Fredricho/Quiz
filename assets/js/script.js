@@ -4,7 +4,7 @@ const scoreText = document.getElementById("correct");
 const wrongText = document.getElementById("inCorrect");
 const submitText = document.getElementById("btn--submit");
 const qOutOFText = document.getElementById("numberofQ");
-const MAX_QUESTIONS = 5;
+const maxQ = 10;
 const SCORE_POINTS = 10;
 
 let currentQuestion = {};
@@ -204,25 +204,27 @@ alternativeText.forEach(function (alternative) {
         let addAnswerTo = 'incorrect';
         if (correctAnswer === currentQuestion.answer) {
             addAnswerTo = 'correct';
-            playerAnswer.parentElement.classList.add(addAnswerTo);
+            playerAnswer.classList.add(addAnswerTo);
+            correctScore(+1);
         } else {
             let addAnswerTo = 'incorrect';
-            playerAnswer.parentElement.classList.add(addAnswerTo);
-        }
-        if (addAnswerTo === "correct") {
-            correctScore(+1);
-        }
-        if (addAnswerTo === "incorrect") {
+            playerAnswer.classList.add(addAnswerTo);
             incorrectScore1(+1);
         }
+        // if (addAnswerTo === "correct") {
+           
+        // }
+        // if (addAnswerTo === "incorrect") {
+            
+        // }
         setTimeout(function () {
-                playerAnswer.parentElement.classList.remove(addAnswerTo);
+                playerAnswer.classList.remove(addAnswerTo);
                 showQuestion();
             },
-            1000);
+            1500);
 
 
-        //  if (qCounter == MAX_QUESTIONS) {
+        //  if (qCounter == maxQ) {
         //    endGameMessage();
         // }
     });
@@ -230,11 +232,11 @@ alternativeText.forEach(function (alternative) {
 
 function correctScore(num) {
     score += num;
-    scoreText.innerText = score + '/' + MAX_QUESTIONS;
+    scoreText.innerText = score + '/' + maxQ;
 }
 
 function incorrectScore1(num) {
     score += num;
-    wrongText.innerText = score + '/' + MAX_QUESTIONS;
+    wrongText.innerText = score + '/' + maxQ;
 }
 runGame();
