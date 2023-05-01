@@ -2,8 +2,6 @@
 const questionText = document.getElementById("question");
 const alternativeText = Array.from(document.getElementsByClassName('alternatives'));
 const scoreText = document.getElementById("correct");
-const wrongText = document.getElementById("inCorrect");
-const submitText = document.getElementById("btn--submit");
 const qOutOFText = document.getElementById("numberofQ");
 const maxQ = 10;
 
