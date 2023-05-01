@@ -11,38 +11,29 @@ Welcome to General Knowledge Quiz: [YogaOnline](https://fredricho.github.io/Quiz
 
 ## Wireframes
 
-These wireframes were created in Balsamiq for the YogaOnline website, one for each page for full-size and mobile size. There will be some adjustments to the final sited due to the development process and time limit.
+These wireframes were created in Balsamiq for the General Knwoledge Quiz, one for each page for full-size and mobile size. There will be some adjustments to the final sited due to the development process and time limit.
 <div>
 <img
-  src=""
+  src="assets/images/webH.png"
   alt="Balsamiq-Home"
   title="Home Desktop-version"
   style="display: inline-block;max-width: 30vw; height:50vh;">
   <img
-  src="readimages/Classes W1.png"
-  alt="Balsamiq-YogaOnline-Classes"
-  title="Classes Desktop-version"
+  src="assets/images/webQ.png"
+  alt="Quiz Game"
+  title="General Knowledge Quiz"
   style="display: inline-block;max-width: 30vw; height:50vh;">
     <img
-  src="readimages/Sign In w.png"
-  alt="Balsamiq-YogaOnline-Sign Up"
-  title="Sign Up Desktop-version"
+  src="assets/images/mobileH.png"
+  alt="Home Mobile-version"
+  title="Home mobile version"
   style="display: inline-block;max-width: 30vw; height:50vh;">
    <img
-  src="readimages/Home M.png"
-  alt="Balsamiq-YogaOnline-Home-Mobile"
-  title="Home Mobile-version"
+  src="assets/images/mobileQ.png"
+  alt="Balsamiq-Mobile-quiz"
+  title="Quiz Mobile-version"
   style="display: inline-block;max-width: 30vw; height:50vh;">
-   <img
-  src="readimages/Classes M.png"
-  alt="Balsamiq-YogaOnline-Classes-Mobile"
-  title="Classes Mobile-version"
-  style="display: inline-block;max-width: 30vw; height:50vh;">
-   <img
-  src="readimages/sign M.png"
-  alt="Balsamiq-YogaOnline-Sign Up-Mobile"
-  title="Sign Up Mobile-version"
-  style="display: inline-block;max-width:30vw; height:50vh;">
+  
 </div>
 
 ## Site Structure
