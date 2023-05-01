@@ -42,16 +42,16 @@ alternativeText.forEach(function (alternative) {
             if (!acceptAnswer) return;
             acceptAnswer = false;
             const playerAnswer = event.target;
-            const correctAnswer = playerAnswer.dataset.type;
+            const currentAnswer = playerAnswer.dataset.type;
             let addAnswerTo = 'incorrect';
-            if (correctAnswer === currentQuestion.answer) {
+            if (currentAnswer === currentQuestion.answer) {
                 addAnswerTo = 'correct';
                 playerAnswer.classList.add(addAnswerTo);
                 correctScore(+1);
             } else {
                 addAnswerTo = 'incorrect';
                 playerAnswer.classList.add(addAnswerTo);
-                incorrectScore1(+1);
+                
             }
 
             qOutOFText.innerText = qCounter;
@@ -74,10 +74,6 @@ function correctScore(num) {
     scoreText.innerText = score + '/' + maxQ;
 }
 
-function incorrectScore1(num) {
-    // score += num;
-    // scoreText.innerText = score + '/' + maxQ;
-}
 
 function gameOver() {
     let buttons = document.getElementsByClassName("alternatives");
