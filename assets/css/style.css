@@ -19,7 +19,7 @@ h1 {
 
 h2 {
     font-family: Bitter, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .game-area-outer {
@@ -54,7 +54,8 @@ h2 {
     max-width: 80%;
     margin: auto;
 }
-#qNumber{
+
+#qNumber {
     margin-top: 2rem;
     font-size: 2rem;
 }
@@ -107,4 +108,15 @@ h2 {
     border-color: red;
     color: red;
     font-size: 1rem;
+}
+
+#text-rules {
+    font-size: 1.5rem;
+    background-color: burlywood;
+    padding: 4rem;
+}
+
+#text-rules>ul {
+    list-style: none;
+    padding: 1rem;
 }
