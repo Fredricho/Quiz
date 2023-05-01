@@ -4,7 +4,6 @@
     font-size: 62.5%;
     background-color: aqua;
     font-family: Bitter, sans-serif;
-    
 }
 
 * {
@@ -30,30 +29,27 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
 .heading {
     margin-bottom: 5rem;
 }
+
 .game-area {
-    
     height: 60rem;
     width: 70rem;
     max-width: 80rem;
     border-radius: 1.5rem;
-    /* justify-content: center; */
-    /* align-items: center;  */
     padding-top: 3rem;
     text-align: center;
     background-color: brown;
-   
-
 }
 
 .question-area {
-   
+
     padding: 1.5rem;
     align-items: center;
     justify-content: center;
-    border:0.5rem solid black;
+    border: 0.5rem solid black;
     background-color: greenyellow;
     max-width: 80%;
     margin: auto;
@@ -82,31 +78,29 @@ h2 {
     cursor: pointer;
 }
 
-.btn:hover{
-background-color:aquamarine;
+.btn:hover {
+    background-color: aquamarine;
 }
-.startQ{
+
+.startQ {
     text-decoration: none;
     font-size: 2rem;
     padding: 2rem;
     color: black;
 }
-.fa-solid{
+
+.fa-solid {
     font-size: 2rem;
 }
 
-.correct{
-    /* background-color: green; */
+.correct {
     border-color: green;
     color: green;
     font-size: 3rem;
-   
 }
 
-.incorrect{
-    background-color: red; 
+.incorrect {
     border-color: red;
     color: red;
     font-size: 1rem;
-    
 }
