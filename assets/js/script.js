@@ -66,7 +66,7 @@ function correctScore(num) {
     score += num;
     scoreText.innerText = score + '/' + maxQ;
 }
-// Hides the buttons the Quiz is over at Question 10.
+// Hides the alternative buttons, at question 10.
 function gameOver() {
     let buttons = document.getElementsByClassName("alternatives");
     for (let i = 0; i < buttons.length; i++) {

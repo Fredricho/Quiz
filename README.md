@@ -3,9 +3,9 @@
 General Knowledge Quiz is a Quiz game, with the aim to test the users general knowledge. The goal of the game is to give the user a funny time while testing their knowledge and it's easy to get started!
 
 
-Welcome to General Knowledge Quiz: [YogaOnline](https://fredricho.github.io/Quiz/)
+Welcome to General Knowledge Quiz: [Quiz](https://fredricho.github.io/Quiz/)
 
-<img src="mockup" 
+<img src="assets/images/quizMock.png" 
   style="height:200px width:200px;">
 
 
@@ -45,7 +45,7 @@ The General Knowledge Quiz has two pages, [Home](/index.html), [Quiz](/quiz.html
   * ### Typography
 
   The chosen fonts for this website were Merriweather for headings and Bitter for the body and the backup fonts were sans-serif respectively.
-  * Merriweather was choosen to be a easy to read font.
+  * Merriweather was choosen to be a good looking font and easy to read.
   * Bitter was chosen to be easy to read. 
 
 * ### Color Scheme
@@ -60,20 +60,21 @@ The Quiz is developed to be simple, and the focus is to let the user started wit
   * ### Home- First Page
     * Is the first page the users enters, it has a short descritption and rules of the quiz game. The start button on the page navigates the user to the quiz and starts it. 
 
-    <img src="" style="height:autopx width:200px;">
+    <img src="assets/images/homeP.png" style="height:auto; width:200px;">
 
   * ### Quiz - Page
-    * Is the were the Quiz is locate, and it views the question and four alternatives to each question. If the users choice is correct the button border, text and font-size will change to red/green and the font-size will get bigger or smaller. The number of questions and the users score is to be viewed aswell. 
+    * Is were the Quiz is located, and it views the question and four alternatives to each question. If the users choice is correct the button border, text and font-size will change to red/green and the font-size will get bigger or smaller. The number of questions and the users score is to be viewed aswell. 
      <br>
-<img src="" style="height:auto; width:500px;">
+<img src="assets/images/corrA.png" style="height:auto; width:500px;">
+<img src="assets/images/wrongA.png" style="height:auto; width:500px;">
+<img src="assets/images/qAndS.png" style="height:auto; width:500px;">
 
  
 
 ## Future Features
 * A highscore page.
 * Different Quiz themes
-*  
-* 
+
 
 
 ## Technologies Used
@@ -88,19 +89,24 @@ The Quiz is developed to be simple, and the focus is to let the user started wit
 
 ### Code Validation
 
-The site has gone through several tests to minimize the risk of unwanted errors. All pages have been validated in W3C html Validator,the W3C CSS Validator and JShint for JavaScript. There were a few minor errors, such as no !DOCTYPE,
-after the test all of the errors, were fixed. Images of the result in HTML validator, for each page:
+The site has gone through several tests to minimize the risk of unwanted errors. All pages have been validated in W3C html Validator,the W3C CSS Validator and JShint for JavaScript. There were a few minor errors, such as no !DOCTYPE, unused variables after the test all of the errors, were fixed. Images of the result in HTML validator, for each page:
 
 * ### Home Page
-<img src="">
+<img src="assets/images/noerrors.png">
 
 * ### Quiz Page
-<img src="">
+<img src="assets/images/noerrors.png">
+ 
+ ### CSS Validator Results
+<img src="assets/images/cssvalidator.png">
+
+### JSHint Result
+<img src="assets/images/jshint.png">
 
 ## Responsiveness Test
 * This test was made manually tested with Google Chrome Devtools, and all of the listed devices in devtools were checked. Both pages passed the test.
 
-  <img  src="" style="height:auto; width:10rem;"> 
+  <img  src="assets/images/devtools" style="height:auto; width:10rem;"> 
 
 
 ## Browser Compatibility
@@ -113,19 +119,20 @@ Mozilla Firefox - Pass, no visible errors or bugs, and fully responsive.
  ## Known Bugs
  * Resolved
    * During the HTML validation a few bugs were shown:
-     * No !DOCTYPE HTML, 
+     * No !DOCTYPE HTML, a tag in button tag. 
+     * Unused variables variables in JS.
+     * 18 warinngs in JS 	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
 
 * Unresolved
- * 
- * 
+ * The question counter counts the after being clicked, when Q 2 i viewed it's still Q1 before it's clicked.
+ 
 
 ## Additional Testing 
 
 ### Lighthouse
   * The site is tested with Google Chrome Lighthouse, the results are shown in the image below:
-  <img src="" style="height:auto; width:40rem;">
+  <img src="assets/images/lighthouse.png" style="height:auto; width:40rem;">
  
-  * This is the result after I compressed the Images and video, which gave me a better result.  
 
    ## Deployment
  The site was deployed on Github and how it was made and an image:
@@ -134,7 +141,7 @@ Mozilla Firefox - Pass, no visible errors or bugs, and fully responsive.
  3. Source > select Branch to master > Save
  4. Wait some time, then a link will appear up if the progress were successful.
 
- <img src="readimages/gith.png" style="height:auto; width:40rem;">
+ <img src="assets/images/gitdep.png" style="height:auto; width:40rem;">
 
  [Link to repository](https://github.com/Fredricho/Quiz)
 
@@ -146,7 +153,7 @@ A copy of the repository can be made and changes to the copy won't affect the or
 1. Login in and go to [Link to repository](https://github.com/Fredricho/Quiz)
 2. The fork icon is top right, click that button to make a copy of the original repository.
 
-<img src="readimages/fork.png" style="height:auto; width:40rem;">
+<img src="assets/images/fork.png" style="height:auto; width:40rem;">
 
 ## Create a local clone of this project
 
@@ -160,7 +167,7 @@ Here comes a guide to creating a local clone of this project:
 6. Type git clone and CTRL-V/Paste the URL from the previous step from Github 
 7. Hit enter and a clone will be created.
 
-<img src="readimages/code.png" style="height:auto; width:40rem;">
+<img src="assets/images/clone.png" style="height:auto; width:40rem;">
 
 ## Credits
 * GitHub- For make it possible to host my site.
@@ -168,14 +175,16 @@ Here comes a guide to creating a local clone of this project:
 * ChatGpt - For generated Quiz questions and answers.
 * Balsamiq - For the wireframes.
 * W3schools - For all of the information, was really key for making this site.
-* YouTube toutorials
+* YouTube toutorial: Brian Design How to Make a Quiz App using HTML CSS Javascript
+* YouTube toutorial: Code Geek Create a Quiz App using HTML, CSS & JavaScript
+* YouTube toutorial: Keep Coding QUIZ with JavaScript | The Ultimate Guide
 
 ## Content
 The Quiz is generated by ChatGpt. Icons in Home and Quiz page were taken from FontAwesome. 
 
 
 ## Acknowledgements
-This site was made as my second project at Code Institute, it is my first game to develop as well and the first time using JavaScript. It has been very challenging an
+This site was made as my second project at Code Institute, it is my first game to develop as well and the first time using JavaScript. I had no mentor sessions on this project, cause my assigned mentor had no aviable time unfortunately. So I had to rely on youtube tutorials, slack and google to get some advices. 
 
 
 
