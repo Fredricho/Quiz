@@ -23,7 +23,7 @@ function runGame() {
 }
 
 function showQuestion() {
-  
+
     qCounter++;
 
     const qIndex = Math.floor(Math.random() * quizQuestions.length);
@@ -39,20 +39,27 @@ function showQuestion() {
 
 alternativeText.forEach(function (alternative) {
     alternative.addEventListener('click', function (event) {
-        if (!acceptAnswer) return;
-        acceptAnswer = false;
-        const playerAnswer = event.target;
-        const correctAnswer = playerAnswer.dataset.type;
-        let addAnswerTo = 'incorrect';
-        if (correctAnswer === currentQuestion.answer) {
-            addAnswerTo = 'correct';
-            playerAnswer.classList.add(addAnswerTo);
-            correctScore(+1);
-        } else {
-            addAnswerTo = 'incorrect';
-            playerAnswer.classList.add(addAnswerTo);
-            incorrectScore1(+1);
-        } 
+            if (!acceptAnswer) return;
+            acceptAnswer = false;
+            const playerAnswer = event.target;
+            const correctAnswer = playerAnswer.dataset.type;
+            let addAnswerTo = 'incorrect';
+            if (correctAnswer === currentQuestion.answer) {
+                addAnswerTo = 'correct';
+                playerAnswer.classList.add(addAnswerTo);
+                correctScore(+1);
+            } else {
+                addAnswerTo = 'incorrect';
+                playerAnswer.classList.add(addAnswerTo);
+                incorrectScore1(+1);
+            }
+
+            qOutOFText.innerText = qCounter;
+            if (qCounter === maxQ) {
+                gameOver();
+            }
+        
+        
 
         setTimeout(function () {
                 playerAnswer.classList.remove(addAnswerTo);
@@ -68,8 +75,15 @@ function correctScore(num) {
 }
 
 function incorrectScore1(num) {
-    score += num;
-    wrongText.innerText = score + '/' + maxQ;
+    // score += num;
+    // scoreText.innerText = score + '/' + maxQ;
+}
+
+function gameOver() {
+    let buttons = document.getElementsByClassName("alternatives");
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].style.display = "none";
+    }
 }
 
 runGame();
