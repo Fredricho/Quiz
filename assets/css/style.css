@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-    font-family: Bitter, sans-serif;
+    font-family: Merriweather, sans-serif;
     font-size: 2rem;
 }
 
@@ -36,7 +36,7 @@ h2 {
 }
 
 .game-area {
-    height: 60rem;
+    height: 65rem;
     width: 70rem;
     max-width: 80rem;
     border-radius: 1.5rem;
@@ -66,6 +66,8 @@ h2 {
     grid-template-columns: repeat(2, auto);
     gap: 1rem;
     margin-top: 5rem;
+    margin-bottom: 4rem;
+    
 
 }
 
@@ -82,6 +84,7 @@ h2 {
     border: 0.5rem solid black;
     border-radius: 0.5rem;
     cursor: pointer;
+    font-family: Bitter, sans-serif;
 }
 
 .btn:hover {
@@ -93,8 +96,13 @@ h2 {
     font-size: 2rem;
     padding: 2rem;
     color: black;
+    border: 0.5rem solid black;
+    background-color: beige;
+    
 }
-
+.startQ:hover{
+    background-color: aquamarine;
+}
 .fa-solid {
     font-size: 2rem;
 }
