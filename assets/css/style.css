@@ -106,7 +106,10 @@ h2 {
 .fa-solid {
     font-size: 2rem;
 }
-
+.scores{
+    font-size: 2rem;
+    padding-top: 2rem;
+}
 .correct {
     border-color: green;
     color: green;

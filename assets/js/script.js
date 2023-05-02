@@ -61,7 +61,7 @@ alternativeText.forEach(function (alternative) {
     });
 });
 
-// Increments the correct score
+// Increments number of correct answers
 function correctScore(num) {
     score += num;
     scoreText.innerText = score + '/' + maxQ;
