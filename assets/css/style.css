@@ -1,17 +1,21 @@
+/* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Merriweather:wght@700&display=swap');
 
+/* Root element of the document */
 :root {
     font-size: 62.5%;
     background-color: aqua;
     font-family: Bitter, sans-serif;
 }
 
+/* Default zero values*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Headings */
 h1 {
     font-family: Merriweather, sans-serif;
     font-size: 3rem;
@@ -22,6 +26,11 @@ h2 {
     font-size: 2rem;
 }
 
+.heading {
+    margin-bottom: 5rem;
+}
+
+/* Game area background  */
 .game-area-outer {
     width: 100%;
     height: 100%;
@@ -31,9 +40,7 @@ h2 {
     padding-top: 3rem;
 }
 
-.heading {
-    margin-bottom: 5rem;
-}
+/* Game area  */
 
 .game-area {
     height: 65rem;
@@ -45,6 +52,7 @@ h2 {
     background-color: brown;
 }
 
+/* Quiz Question  */
 .question-area {
     padding: 1.5rem;
     align-items: center;
@@ -55,27 +63,29 @@ h2 {
     margin: auto;
 }
 
+/* Question number */
 #qNumber {
     margin-top: 2rem;
     font-size: 2rem;
 }
 
+/* Questions/alternatives buttons*/
 .answer-area {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 1rem;
     margin-top: 5rem;
     margin-bottom: 4rem;
-
-
 }
 
+/* Correct answer counter */
 .score-area {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* buttons for alternatives  */
 .btn {
     margin: 1rem;
     padding: 1.5rem;
@@ -90,6 +100,7 @@ h2 {
     background-color: aquamarine;
 }
 
+/* Start quiz "Button" */
 .startQ {
     text-decoration: none;
     font-size: 2rem;
@@ -113,6 +124,7 @@ h2 {
     padding-top: 2rem;
 }
 
+/* Reacts on the players answer, if correct/incorrect the button changes border,text color and size */
 .correct {
     border-color: green;
     color: green;
@@ -124,6 +136,8 @@ h2 {
     color: red;
     font-size: 1rem;
 }
+
+/* First page, style to the rules of the game  */
 
 #text-rules {
     font-size: 1.5rem;
