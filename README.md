@@ -89,7 +89,7 @@ The Quiz is developed to be simple, and the focus is to let the user started wit
 
 ### Code Validation
 
-The site has gone through several tests to minimize the risk of unwanted errors. All pages have been validated in W3C html Validator,the W3C CSS Validator and JShint for JavaScript. There were a few minor errors, such as no !DOCTYPE, unused variables after the test all of the errors, were fixed. Images of the result in HTML validator, for each page:
+The site has gone through several tests to minimize the risk of unwanted errors. All pages have been validated in W3C html Validator,the W3C CSS Validator and JShint for JavaScript. There were a few minor errors, such as no !DOCTYPE, unused variables after the test all of the errors, were fixed. I first placed a href in button, which generated a warning, styled the A-tag as a button instead. Images of the result in HTML validator, for each page:
 
 * ### Home Page
 <img src="assets/images/noerrors.png">
@@ -106,7 +106,7 @@ The site has gone through several tests to minimize the risk of unwanted errors.
 ## Responsiveness Test
 * This test was made manually tested with Google Chrome Devtools, and all of the listed devices in devtools were checked. Both pages passed the test.
 
-  <img  src="assets/images/devtools" style="height:auto; width:10rem;"> 
+  <img  src="assets/images/devtools.png" style="height:auto; width:10rem;"> 
 
 
 ## Browser Compatibility
@@ -122,9 +122,11 @@ Mozilla Firefox - Pass, no visible errors or bugs, and fully responsive.
      * No !DOCTYPE HTML, a tag in button tag. 
      * Unused variables variables in JS.
      * 18 warinngs in JS 	'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+     * a href in a button tag.
+     * duplicate classes on a div.
 
 * Unresolved
- * The question counter counts the after being clicked, when Q 2 i viewed it's still Q1 before it's clicked.
+ * The question counter counts after being clicked, when Q 2 i viewed it's still Q1 before it's clicked.
  
 
 ## Additional Testing 

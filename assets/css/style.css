@@ -46,7 +46,6 @@ h2 {
 }
 
 .question-area {
-
     padding: 1.5rem;
     align-items: center;
     justify-content: center;
@@ -67,7 +66,7 @@ h2 {
     gap: 1rem;
     margin-top: 5rem;
     margin-bottom: 4rem;
-    
+
 
 }
 
@@ -98,18 +97,22 @@ h2 {
     color: black;
     border: 0.5rem solid black;
     background-color: beige;
-    
+
 }
-.startQ:hover{
+
+.startQ:hover {
     background-color: aquamarine;
 }
+
 .fa-solid {
     font-size: 2rem;
 }
-.scores{
+
+.scores {
     font-size: 2rem;
     padding-top: 2rem;
 }
+
 .correct {
     border-color: green;
     color: green;
